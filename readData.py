@@ -39,15 +39,15 @@ r_ij = dict(zip(branch_ij,r))
 x_ij = dict(zip(branch_ij,x))
 
 # 读取有功无功数据
-PData = pd.read_excel('powerInfo.xlsx',sheet_name='ActiveLoad').values
+PData = pd.read_excel('powerData.xlsx',sheet_name='ActiveLoad').values
 # activa load
 P_in_it = {(i,t):PData[i,t+1]/baseMVA for i in range(B_num) for t in T_set}
 # reactive load
-QData = pd.read_excel('powerInfo.xlsx',sheet_name='ReactiveLoad').values
+QData = pd.read_excel('powerData.xlsx',sheet_name='ReactiveLoad').values
 Q_in_it = {(i,t):QData[i,t+1]/baseMVA for i in range(B_num) for t in T_set}
 
 # 读取DG数据
-dgData = pd.read_excel('powerInfo.xlsx',sheet_name='Dg').values
+dgData = pd.read_excel('powerData.xlsx',sheet_name='Dg').values
 dgNode = dgData[:,1].astype('int')
 dgPmax_it = dict(zip(dgNode,dgData[:,2]/baseMVA))
 dgPmin_it = dict(zip(dgNode,dgData[:,3]/baseMVA))
