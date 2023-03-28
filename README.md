@@ -1,5 +1,5 @@
 # Distribution-Network-Reconfiguration
-Distribution network dynamic reconfiguration using spanning trees and Distflow, the objective is to minimize the cost of power loss between lines. The distribution network radial constraints are programmed according to "R. A. Jabr, R. Singh and B. C. Pal, 'Minimum Loss Network Reconfiguration Using Mixed-Integer Convex Programming,' IEEE Transactions on Power Systems, vol. 27, no. 2, pp. 1106-1115, May 2012, doi: 10.1109/TPWRS.2011.2180406."
+Distribution network dynamic reconfiguration using spanning trees and Distflow, the objective is to minimize the power losses between lines. The distribution network radial constraints are programmed according to "R. A. Jabr, R. Singh and B. C. Pal, 'Minimum Loss Network Reconfiguration Using Mixed-Integer Convex Programming,' IEEE Transactions on Power Systems, vol. 27, no. 2, pp. 1106-1115, May 2012, doi: 10.1109/TPWRS.2011.2180406."
 
 Feel free to contact me (wyx_coder@foxmail.com) if you have any quetions.
 
