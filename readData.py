@@ -23,7 +23,7 @@ vmin = 0.9*0.9
 vmax = 1.05*1.05
 # 支路数据
 # line
-branchData = pd.read_excel('powerInfo.xlsx',sheet_name='Line').values
+branchData = pd.read_excel('powerDatanfo.xlsx',sheet_name='Line').values
 f = branchData[:, 0].astype('int')
 t = branchData[:, 1].astype('int')
 branch_num = len(f)
